@@ -38,13 +38,6 @@ nextDom.addEventListener('click',
             cardContainer[activeImage].classList.remove('d-block');
             activeImage++;
             cardContainer[activeImage].classList.add('d-block');
-
-            prevDom.classList.remove('d-none');
-
-            if (activeImage == cardContainer.length - 1) {
-                nextDom.classList.add('d-none');
-            }
-
         }
     }
 );
@@ -56,12 +49,6 @@ prevDom.addEventListener('click',
             cardContainer[activeImage].classList.remove('d-block');
             activeImage--;
             cardContainer[activeImage].classList.add('d-block');
-
-            nextDom.classList.remove('d-none');
-
-            if (activeImage == 0) {
-                prevDom.classList.add('d-none');
-            }
 
         }
     }
