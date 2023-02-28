@@ -42,7 +42,7 @@ nextDom.addEventListener('click',
             prevDom.classList.remove('d-none');
 
             if (activeImage == cardContainer.length - 1) {
-                nextDom.classList.add('hide');
+                nextDom.classList.add('d-none');
             }
 
         }
