@@ -38,6 +38,11 @@ nextDom.addEventListener('click',
             cardContainer[activeImage].classList.remove('d-block');
             activeImage++;
             cardContainer[activeImage].classList.add('d-block');
+
+        }else{
+            cardContainer[activeImage].classList.remove('d-block');
+            activeImage = 0;
+            cardContainer[activeImage].classList.add('d-block');
         }
     }
 );
@@ -50,6 +55,10 @@ prevDom.addEventListener('click',
             activeImage--;
             cardContainer[activeImage].classList.add('d-block');
 
+        }else{
+            cardContainer[activeImage].classList.remove('d-block');
+            activeImage = [4];
+            cardContainer[activeImage].classList.add('d-block');
         }
     }
 );
